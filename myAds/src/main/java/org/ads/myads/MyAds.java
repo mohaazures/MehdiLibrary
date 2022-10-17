@@ -285,6 +285,7 @@ public class MyAds {
     public static void MoreApps(Activity activity, RecyclerView recyclerView) {
         List<MoreAppsItem> moreAppsItems = new ArrayList<>();
         moreAppsItems = Config.response.getMoreApps();
+
         recyclerView.setLayoutManager(new GridLayoutManager(activity, 3));
         recyclerView.setAdapter(new MoreAppsAdapter(activity, moreAppsItems));
     }
